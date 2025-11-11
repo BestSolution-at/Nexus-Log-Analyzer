@@ -4,7 +4,7 @@ A simple script to analyze Nexus repository access logs and count requests by pa
 
 ## Rationale
 
-Since version 3.77, sonatype has enforced hard limites for the community edition of the nexus repository, see https://help.sonatype.com/en/usage-center.html#usage-limitations-for-community-edition
+Since version 3.77, sonatype has enforced hard limits for the community edition of the nexus repository, see https://help.sonatype.com/en/usage-center.html#usage-limitations-for-community-edition
 
 This means, that after exceeding those limits, certain operations will cease to work unless you pay for a commercial license.
 
