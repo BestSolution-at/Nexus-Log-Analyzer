@@ -83,29 +83,6 @@ def categorize_request(repo_name, user_agent, request_path):
 
     return 'Other'
 
-def categorize_repo(repo_name):
-    """
-    Legacy function for backward compatibility.
-    Uses only repository name for categorization.
-    Prefer using categorize_request() for more accurate detection.
-    """
-    repo_lower = repo_name.lower()
-
-    if 'maven' in repo_lower:
-        return 'Maven'
-    elif 'npm' in repo_lower:
-        return 'npm'
-    elif 'docker' in repo_lower:
-        return 'Docker'
-    elif 'nuget' in repo_lower:
-        return 'NuGet'
-    elif 'pypi' in repo_lower or 'python' in repo_lower:
-        return 'PyPI'
-    elif 'p2' in repo_lower or 'eclipse' in repo_lower:
-        return 'P2/Eclipse'
-    else:
-        return 'Other'
-
 def analyze_logs(logfile):
     """Analyze Nexus logs and count requests by repository and format"""
 
